@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="6dp"
+    android:background="@android:color/transparent">
+
+    <com.jarvis.assistant.JarvisOrbView
+        android:id="@+id/jarvis_orb"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:contentDescription="Jarvis holographic orb" />
+
+    <TextView
+        android:id="@+id/jarvis_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:text="جارویس آماده است"
+        android:textColor="#66F9FFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:gravity="center" />
+</LinearLayout>

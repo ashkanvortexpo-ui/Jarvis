@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Jarvis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/jarvis_blue</item>
+        <item name="colorPrimaryDark">@color/jarvis_dark_blue</item>
+        <item name="colorAccent">@color/jarvis_blue</item>
+        <item name="android:windowBackground">@color/jarvis_dark_blue</item>
+    </style>
+</resources>

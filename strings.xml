@@ -1,0 +1,3 @@
+<resources>
+<string name="app_name">Jarvis</string><string name="start_jarvis">گوش‌به‌زنگ جارویس</string><string name="stop_jarvis">توقف گوش‌به‌زنگ</string><string name="grant_overlay">اجازه نمایش روی برنامه‌ها</string><string name="grant_mic">اجازه میکروفون و اعلان</string><string name="api_mode">تنظیمات حالت API هوش مصنوعی</string><string name="screen_analysis">فعال‌سازی تحلیل صفحه بازی</string><string name="status_ready">آماده</string>
+</resources>

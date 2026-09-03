@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jarvis_dark_blue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مرکز کنترل J.A.R.V.I.S"
+            android:textColor="@color/jarvis_blue"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="6dp"/>
+
+        <TextView
+            android:id="@+id/theme_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="6dp"/>
+
+        <Button android:id="@+id/btn_profiles" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="پروفایل‌ها: عادی / بازی / کار / شب"/>
+        <Button android:id="@+id/btn_theme" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="طراح ظاهر و رنگ هولوگرام"/>
+        <Button android:id="@+id/btn_voice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="تنظیمات صدا و پاسخ"/>
+        <Switch
+            android:id="@+id/switch_hologram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="فعال بودن هولوگرام"
+            android:textColor="@color/white"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="کوتاهی پاسخ"
+            android:textColor="@color/white"
+            android:paddingTop="12dp"/>
+        <SeekBar
+            android:id="@+id/seek_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="2"/>
+
+        <Button android:id="@+id/btn_gaming" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="مرکز بازی و تحلیل تاکتیکی"/>
+        <Button android:id="@+id/btn_automation" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="اتوماسیون و قوانین آماده"/>
+        <Button android:id="@+id/btn_permissions" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="مرکز مجوزها"/>
+        <Button android:id="@+id/btn_android_settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="مرکز تنظیمات اندروید"/>
+        <Button android:id="@+id/btn_network" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="تنظیمات اینترنت و وای‌فای"/>
+        <Button android:id="@+id/btn_battery" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="تنظیمات باتری"/>
+        <Button android:id="@+id/btn_accessibility" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="تنظیمات دسترسی‌پذیری"/>
+        <Button android:id="@+id/btn_device_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="اطلاعات دستگاه"/>
+        <Button android:id="@+id/btn_editor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ویرایشگر تنظیمات سیستم (سبک SetEdit)"/>
+        <Button android:id="@+id/btn_personal_assistant" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="دستیار شخصی: یادداشت، کار و تایمر"/>
+<Button android:id="@+id/btn_diagnostics" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="عیب‌یابی و بررسی سلامت جارویس"/>
+<Button android:id="@+id/btn_backup" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="پشتیبان‌گیری تنظیمات"/>
+    <Button
+        android:id="@+id/gaming_ai_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="🎮 حالت بازی هوشمند"
+        android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

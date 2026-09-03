@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="Jarvis" android:supportsRtl="true" android:theme="@style/Theme.Jarvis">
+        <activity android:name=".DiagnosticsActivity" android:exported="false" />
+        <activity android:name=".SettingsEditorActivity" android:exported="false" />
+        <activity android:name=".JarvisSettingsActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="true" android:label="Jarvis">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+        <service android:name=".OverlayService" android:enabled="true" android:exported="false" android:foregroundServiceType="microphone" />
+        <service android:name=".ScreenCaptureService" android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" />
+        <provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.fileprovider" android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+            <receiver android:name=".ReminderReceiver" android:exported="false" />
+    </application>
+</manifest>

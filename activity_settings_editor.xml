@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jarvis_dark_blue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ویرایشگر تنظیمات سیستم"
+            android:textColor="@color/jarvis_blue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/editor_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="یک کلید انتخاب کن."
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+        <Spinner
+            android:id="@+id/editor_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/editor_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="مقدار"
+            android:textColor="@color/white"
+            android:inputType="text"/>
+        <Button
+            android:id="@+id/btn_read_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خواندن مقدار"/>
+        <Button
+            android:id="@+id/btn_write_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="دادن اجازه تغییر تنظیمات سیستم"/>
+        <Button
+            android:id="@+id/btn_write_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ذخیره مقدار"/>
+        <Button
+            android:id="@+id/btn_back_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="بازگشت"/>
+    </LinearLayout>
+</ScrollView>

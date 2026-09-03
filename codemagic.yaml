@@ -1,0 +1,16 @@
+workflows:
+  android-native-build:
+    name: Jarvis Android APK Build
+    max_build_duration: 60
+    environment:
+      vars:
+        PACKAGE_NAME: "com.jarvis.assistant"
+      java: 17
+    scripts:
+      - name: Build debug APK
+        script: |
+          set -e
+          gradle --version
+          gradle --no-daemon assembleDebug --stacktrace
+    artifacts:
+      - app/build/outputs/**/*.apk

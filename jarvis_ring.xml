@@ -1,0 +1,31 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- حلقه بیرونی نقطه‌چین -->
+    <path
+        android:strokeColor="#00D2FF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M100,10 A90,90 0 1 1 99.9,10"
+        android:strokeAlpha="0.9" />
+
+    <!-- حلقه میانی -->
+    <path
+        android:strokeColor="#66F9FFFF"
+        android:strokeWidth="3"
+        android:pathData="M100,35 A65,65 0 1 1 99.9,35"
+        android:strokeAlpha="0.7" />
+
+    <!-- هسته مرکزی -->
+    <path
+        android:fillColor="#3300D2FF"
+        android:pathData="M100,65 A35,35 0 1 1 99.9,65 Z" />
+
+    <!-- نقطه مرکز -->
+    <path
+        android:fillColor="#00D2FF"
+        android:pathData="M100,85 A15,15 0 1 1 99.9,85 Z" />
+</vector>
